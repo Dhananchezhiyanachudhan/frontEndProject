@@ -18,9 +18,10 @@ const Projects = () => {
        </div>      
       <div className="project-cards">      
      
-        <div className="card"><img src={image1} alt="Project 1"></img></div>
+        <div className="card1"><img src={image1} alt="Project 1"></img></div>
+        <div className="card2">
         <div className="card"><img src={image2} alt="Project 2" ></img ></div>
-        <div className="card"><img src={image2} alt="Project 3"></img></div>
+        <div className="card"><img src={image2} alt="Project 3"></img></div></div>
       </div>
       <div  className="projectWords">
         <div className="projectWords-1">

@@ -8,12 +8,12 @@ const Header = () => {
       <nav className="nav">
         <a href="/" className="logo"><h1>WeMake</h1></a>
         <ul className="menu">
-          <li><a href="#about">About us</a></li>
+          <li><a href="#">About us</a></li>
           <li><a href="#work">How we work</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#residential">Residential</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#contact">EN NL</a></li>
+          <li><a href="#">Residential</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">EN NL</a></li>
         </ul>    
         <a href="#contact" className="btn-primary"><h5>let's talk</h5></a>
       </nav>
