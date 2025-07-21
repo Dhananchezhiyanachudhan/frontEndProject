@@ -1,38 +1,269 @@
-.App {
+
+/*    containar   */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #0A2342;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+
+/*    Top-Header   */
+
+.header {
+  background: url('./images/bgimg1.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;       
+  width: 100%;
+}
+
+.top-header {
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;  
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  background-color: black;
+  border-radius: 20px; 
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px; 
+}
+
+.menu li a:hover {
+  color: #ACF7FF;
+}
+
+.btn-primary {
+  margin-left: 16px;
+  padding: 8px 20px;
+  background: transparent;
+  color:black;
+  border-radius: 5px;
+  text-decoration: none;
+ 
+  background-color: #4ce6de;
+  font-size: 20px;
+}
+
+
+
+/*    bottom-header Section    */
+.bottom-header {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bottom-header h1 {
+  font-size: 48px;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottom-header h1 span {
+  display: block;
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bottom-header-buttons {
+  margin-top: 32px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+}
+
+.btn-secondary-one {
+  padding: 5px 20px ; 
+  color: black;
+  background: #ACF7FF ;  
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-secondary-two{
+ background-color: white;
+  padding: 5px 20px ;
+  color: black; 
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/*    ections   */
+.section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 200px 15px 25px ;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+.btn-sec-one{
+  background-color: rgb(118, 176, 224);
+  padding: 7px 20px ; 
+  color: black; 
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+.btn-sec-two{
+  background-color: rgb(18, 199, 33);
+  padding: 7px 20px ;
+  color: white; 
+  border-radius: 4px;
+  text-decoration: none;
+}
+/*  Projects   */
+
+ .project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.card-full {
+  grid-column: span 2;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkProject{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkProject-btn-secondary {
+  padding: 5px;
+  background-color: #76cde7;
+  border-radius: 5px;
+  margin-left: 60px;
+  color: black;
+  text-decoration: none;
+  font-weight: 10px;
+}
+
+.projectWords{
+  display: flex;
+  text-align: center;
+  justify-content: center ;
+  margin-top: 100px;
+}
+.projectWords-1{
+  margin-right: 50px;
+}
+.projectLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.logo img{
+  width:100%;
+  height: auto;
+}
+
+/*  Footer  */
+.site-footer{
+ background-color: #a3b495;
+ height: 400px;
+}
+.footerText{
   color: white;
+  font-size: large;
+  font-weight: 100px;
+  padding-left: 300px; 
+  padding-top: 20px; 
 }
-
-.App-link {
-  color: #61dafb;
+.yesButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yb1{
+  padding:5px 15px ;
+  background-color:white; 
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.yb1 a{
+  color: black;
+}
+.yb2{
+  padding: 5px 15px;
+  background-color: #4ce6de;
+  border-radius: 50%;
+}
+.yb2 a{
+  color:white;
+}
+.yesButton a{  
+  text-decoration: none;
+ }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px; 
+}
+.footermenu{
+color:white;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+.footermenu a {
+  text-decoration: none;
+  color: white;
 }
